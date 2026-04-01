@@ -1,4 +1,52 @@
 # PRUEBA TÉCNICA PDF PROCESSING
+Por: Leonardo Patiño Rodriguez
+## &nbsp; [![pyVersion37](https://img.shields.io/badge/python-3.10.12-blue.svg)](https://www.python.org/download/releases/3.10/)
+
+## Manual de instalación
+
+- Clonar repositorio
+	```
+	git clone https://github.com/leoesleoesleo/03_project_.git
+	```
+
+- Crear entorno virtual
+   Ejemplo virtualenv Linux
+    ```
+	pip install virtualenv
+	```
+	```
+	python3 -m venv pdf_env
+	```
+	```
+	source pdf_env/bin/activate
+	```	
+
+- Navegar hasta la carpeta del proyecto en la carpeta requirements para instalar dependencias
+    ```
+    pip install -r requirements.txt
+    ```
+- Ejecutar pruebas unitarias (Opcional)
+  Cada regla identificada en la implementación es testeable, tambien consume el archivo 'BUL_EM_TM_2024000001_001.json' y compara la salida contra 'BUL_EM_TM_2024000001_001.json' 
+   ```
+   python3 -m unittest -v
+    ``` 
+
+- Validar pylint (Opcional)
+    ```
+   pylint main.py pdf_pipeline.py  
+    ```    
+
+- Ejecutar el programa para consumir 'BUL_EM_TM_2024000007_001.json' y ver el json en consola
+    ```
+   python3 main.py  
+    ```
+    
+- Ejecutar el programa para generar el archivo partiendo de 'BUL_EM_TM_2024000007_001.json', el json se guarda en la carpeta outputs con la fecha hora actual
+    ```
+   python main.py --save  
+    ```
+
+  
 
 ## 1. Resumen general de la solución
 
